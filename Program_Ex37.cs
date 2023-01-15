@@ -34,7 +34,7 @@ int[] ProduktPairsNumber(int[] array)
     int[] newArray = new int[size / 2 + size % 2];
     for (int i = 0; i < newArray.Length; i++)
     {
-        if (array[i] == array[array.Length - 1 - i])
+        if (i == array.Length - 1 - i)
             newArray[i] = array[i];
         else
             newArray[i] = array[i] * array[array.Length - 1 - i];
